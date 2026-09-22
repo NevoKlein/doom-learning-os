@@ -6,10 +6,20 @@ A living learning system for the Doctor Doom game-development project.
 This repository is the source of truth for Codex. The deployed site is the learning interface.
 
 ## Current strategic direction
-The project follows a character-first Doctor Doom foundation strategy. Read `docs/CODEX_HANDOFF_PROJECT_CHANGE.md` and `docs/PROJECT_CONTEXT.md` before making major changes.
+The project follows a character-first Doctor Doom foundation strategy. Read `docs/CODEX_HANDOFF_PROJECT_CHANGE.md`, `docs/PROJECT_CONTEXT.md` and `docs/CURRENT_STATE.md` before making major changes.
 
 ## Current interface
 The repository contains the initial static Learning OS with 25 curriculum phases, resource data, roadmap, four-week starter plan, search/filtering, progress tracking, notes, exports and Codex guidance.
+
+## Validation
+
+Run the dependency-free repository checks with:
+
+```bash
+node tests/validate.mjs
+```
+
+These checks validate JSON syntax, IDs, curriculum/resource references, URL shape and critical application markers.
 
 ## Target product
 Evolve this into a professional Learning OS that combines learning content, project milestones, next-action guidance, synced progress, research records and optional collaboration.

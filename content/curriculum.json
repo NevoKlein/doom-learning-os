@@ -1,0 +1,804 @@
+[
+  {
+    "id": "p1",
+    "number": 1,
+    "title": "כניסה לעולם Unreal Engine",
+    "priority_status": "חובה",
+    "estimated_hours": "3–5 ש׳",
+    "summary": "היכרות עם Launcher, יצירת Project, Viewport, Actors, Content Browser, Blueprint בסיסי ו-Packaging.",
+    "goal": "בסיום: לפתוח פרויקט 3D ולהבין איפה נמצא כל דבר בלי להילחץ מהממשק.",
+    "prerequisites": [],
+    "learning_outcomes": [
+      "Able to: צור פרויקט Third Person חדש",
+      "Able to: פתח Play In Editor",
+      "Able to: שמור Map חדש",
+      "Able to: הוסף Actor אחד ושנה לו Properties"
+    ],
+    "tasks": [
+      "צור פרויקט Third Person חדש",
+      "פתח Play In Editor",
+      "שמור Map חדש",
+      "הוסף Actor אחד ושנה לו Properties"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p1-r1",
+      "p1-r2",
+      "p1-r3"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "סדרת וידאו רשמית; UE 5.3+; חינמית; מסלול רשמי למתחילים; תיעוד רשמי; UE 5.8"
+  },
+  {
+    "id": "p2",
+    "number": 2,
+    "title": "Third Person Template — הבסיס של Doom",
+    "priority_status": "חובה",
+    "estimated_hours": "2–4 ש׳",
+    "summary": "להבין את הדמות המוכנה, התנועה, המצלמה, ה-Blueprints וה-Animation setup שה-Template כבר מספק.",
+    "goal": "לא לכתוב מחדש מערכות שכבר קיימות ב-Unreal; להשתמש בתבנית כשלד ולשנות אותה בהמשך.",
+    "prerequisites": [
+      "p1"
+    ],
+    "learning_outcomes": [
+      "Able to: הפעל את Third Person Template",
+      "Able to: עקוב אחרי BP_ThirdPersonCharacter",
+      "Able to: אתר Skeletal Mesh ו-Animation Blueprint",
+      "Able to: החלף placeholder mesh"
+    ],
+    "tasks": [
+      "הפעל את Third Person Template",
+      "עקוב אחרי BP_ThirdPersonCharacter",
+      "אתר Skeletal Mesh ו-Animation Blueprint",
+      "החלף placeholder mesh"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p2-r1",
+      "p2-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; תיעוד רשמי; UE 5.8; תיעוד רשמי"
+  },
+  {
+    "id": "p3",
+    "number": 3,
+    "title": "Blueprints — לוגיקת משחק ללא קוד כבד",
+    "priority_status": "חובה",
+    "estimated_hours": "5–8 ש׳",
+    "summary": "Variables, functions, events, references, branches, interfaces וארגון Blueprints.",
+    "goal": "להיות מסוגל לבנות מכניקת משחק קטנה בעצמך ולא רק להעתיק nodes.",
+    "prerequisites": [
+      "p2"
+    ],
+    "learning_outcomes": [
+      "Able to: בנה interactable פשוט",
+      "Able to: צור Function ו-Event",
+      "Able to: עבוד עם Variables ו-References",
+      "Able to: ארגן Blueprint גדול ל-Functions/Components"
+    ],
+    "tasks": [
+      "בנה interactable פשוט",
+      "צור Function ו-Event",
+      "עבוד עם Variables ו-References",
+      "ארגן Blueprint גדול ל-Functions/Components"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p3-r1",
+      "p3-r2",
+      "p3-r3"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; תיעוד רשמי; UE 5.8; תיעוד רשמי; UE 5.8; תיעוד רשמי"
+  },
+  {
+    "id": "p4",
+    "number": 4,
+    "title": "Enhanced Input + Xbox-ready architecture",
+    "priority_status": "חובה",
+    "estimated_hours": "3–5 ש׳",
+    "summary": "Input Actions, Mapping Contexts, Modifiers, Triggers ו-remapping. להתחיל עם Keyboard/Mouse אבל לשמור Xbox-ready.",
+    "goal": "כל פעולה במשחק מיוצגת כ-Action לוגי ולא hardcoded key.",
+    "prerequisites": [
+      "p3"
+    ],
+    "learning_outcomes": [
+      "Able to: Create Move/Look/Jump/Sprint actions",
+      "Able to: צור Mapping Context",
+      "Able to: בדוק controller input",
+      "Able to: בנה שכבת remapping בסיסית"
+    ],
+    "tasks": [
+      "Create Move/Look/Jump/Sprint actions",
+      "צור Mapping Context",
+      "בדוק controller input",
+      "בנה שכבת remapping בסיסית"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p4-r1",
+      "p4-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; תיעוד רשמי; UE 5.8; תיעוד רשמי"
+  },
+  {
+    "id": "p5",
+    "number": 5,
+    "title": "Camera — Third Person + First Person אמיתי",
+    "priority_status": "חובה",
+    "estimated_hours": "5–8 ש׳",
+    "summary": "מצלמה חופשית, third-person טבעי, מעבר בלחיצה ל-true first person ויחס נכון בין head/look/body.",
+    "goal": "אב-טיפוס שבו Doom מרגיש כמו אותה דמות בשתי נקודות המבט.",
+    "prerequisites": [
+      "p4"
+    ],
+    "learning_outcomes": [
+      "Able to: Third-person camera follow",
+      "Able to: Free orbit + sensitivity",
+      "Able to: Toggle first/third person",
+      "Able to: First-person hands/body test"
+    ],
+    "tasks": [
+      "Third-person camera follow",
+      "Free orbit + sensitivity",
+      "Toggle first/third person",
+      "First-person hands/body test"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p5-r1",
+      "p5-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; תיעוד רשמי; UE 5.8"
+  },
+  {
+    "id": "p6",
+    "number": 6,
+    "title": "Blender Fundamentals",
+    "priority_status": "חובה",
+    "estimated_hours": "6–12 ש׳",
+    "summary": "Navigation, Interface, modeling, modifiers, materials, collections ו-workflow בסיסי.",
+    "goal": "להיות מסוגל לפתוח reference, לערוך mesh, להפריד חלקים ולשמור קבצים בצורה נקייה.",
+    "prerequisites": [
+      "p5"
+    ],
+    "learning_outcomes": [
+      "Able to: סיים First Steps",
+      "Able to: תרגל Edit Mode",
+      "Able to: תרגל modifiers",
+      "Able to: ארגן Collections"
+    ],
+    "tasks": [
+      "סיים First Steps",
+      "תרגל Edit Mode",
+      "תרגל modifiers",
+      "ארגן Collections"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p6-r1",
+      "p6-r2",
+      "p6-r3"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "חלקים מסוימים חינמיים; חינמי; תיעוד רשמי"
+  },
+  {
+    "id": "p7",
+    "number": 7,
+    "title": "Modeling for Game Assets",
+    "priority_status": "חובה",
+    "estimated_hours": "8–15 ש׳",
+    "summary": "Hard-surface basics, topology בסיסית, seams, UVs, materials והפרדה לחלקים.",
+    "goal": "מודל placeholder איכותי ולא בהכרח Doom final. למד את ה-pipeline, לא את היצירה המושלמת הראשונה.",
+    "prerequisites": [
+      "p6"
+    ],
+    "learning_outcomes": [
+      "Able to: Model simple armor piece",
+      "Able to: UV unwrap",
+      "Able to: Create 2–3 materials",
+      "Able to: Split asset into logical parts"
+    ],
+    "tasks": [
+      "Model simple armor piece",
+      "UV unwrap",
+      "Create 2–3 materials",
+      "Split asset into logical parts"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p7-r1",
+      "p7-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "Reference; Reference"
+  },
+  {
+    "id": "p8",
+    "number": 8,
+    "title": "Doom Character Asset Pipeline",
+    "priority_status": "חובה",
+    "estimated_hours": "10–20 ש׳",
+    "summary": "מעבר מ-reference front/back למודל עבודה, modular armor וארגון assets.",
+    "goal": "לבנות גרסה ראשונה של Doom שאפשר להכניס למנוע, גם אם היא עדיין לא final-quality.",
+    "prerequisites": [
+      "p7"
+    ],
+    "learning_outcomes": [
+      "Able to: Base body mesh",
+      "Able to: Armor modular parts",
+      "Able to: Cape as separate asset",
+      "Able to: Clean naming + folders"
+    ],
+    "tasks": [
+      "Base body mesh",
+      "Armor modular parts",
+      "Cape as separate asset",
+      "Clean naming + folders"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p8-r1",
+      "p8-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; תיעוד רשמי; UE 5.8; תיעוד רשמי"
+  },
+  {
+    "id": "p9",
+    "number": 9,
+    "title": "Rigging + Skinning",
+    "priority_status": "חובה",
+    "estimated_hours": "8–20 ש׳",
+    "summary": "Armature, weights, deformation, facial bones/morph targets ו-rig שנוח לאנימציה.",
+    "goal": "Rig יציב שמאפשר תנועה בלי clipping מוגזם ובלי לשבור את השריון.",
+    "prerequisites": [
+      "p8"
+    ],
+    "learning_outcomes": [
+      "Able to: Create/prepare humanoid armature",
+      "Able to: Weight paint",
+      "Able to: Test deformation",
+      "Able to: Separate facial strategy"
+    ],
+    "tasks": [
+      "Create/prepare humanoid armature",
+      "Weight paint",
+      "Test deformation",
+      "Separate facial strategy"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p9-r1",
+      "p9-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "Reference; UE 5.8; תיעוד רשמי"
+  },
+  {
+    "id": "p10",
+    "number": 10,
+    "title": "Blender → Unreal FBX Integration",
+    "priority_status": "חובה",
+    "estimated_hours": "4–8 ש׳",
+    "summary": "Scale, skeleton, import settings, materials, morph targets ו-debug של assets.",
+    "goal": "להעביר mesh + skeleton + animation בצורה יציבה ולדעת לאבחן import problems.",
+    "prerequisites": [
+      "p9"
+    ],
+    "learning_outcomes": [
+      "Able to: Export test FBX",
+      "Able to: Import Skeletal Mesh",
+      "Able to: Verify skeleton",
+      "Able to: Test animation/morphs"
+    ],
+    "tasks": [
+      "Export test FBX",
+      "Import Skeletal Mesh",
+      "Verify skeleton",
+      "Test animation/morphs"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p10-r1",
+      "p10-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; תיעוד רשמי; UE 5.8; תיעוד רשמי"
+  },
+  {
+    "id": "p11",
+    "number": 11,
+    "title": "Animation Blueprint + State Machine",
+    "priority_status": "חובה",
+    "estimated_hours": "8–15 ש׳",
+    "summary": "Event Graph, AnimGraph, blend spaces, state machines, montages, layered poses ו-parameters.",
+    "goal": "Idle → walk → jog → run → sprint בצורה חלקה, עם בסיס שניתן להרחיב.",
+    "prerequisites": [
+      "p10"
+    ],
+    "learning_outcomes": [
+      "Able to: Create Anim BP",
+      "Able to: Velocity-driven locomotion",
+      "Able to: Blend Space",
+      "Able to: States + transitions"
+    ],
+    "tasks": [
+      "Create Anim BP",
+      "Velocity-driven locomotion",
+      "Blend Space",
+      "States + transitions"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p11-r1",
+      "p11-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; תיעוד רשמי; UE 5.8"
+  },
+  {
+    "id": "p12",
+    "number": 12,
+    "title": "IK + Retargeting",
+    "priority_status": "חובה",
+    "estimated_hours": "5–10 ש׳",
+    "summary": "IK Rig, IK Retargeter ו-foot/hand alignment כדי להשתמש באנימציות ממקורות שונים.",
+    "goal": "לקחת animation קיימת ולהעביר אותה לדמות Doom בלי לאבד איכות.",
+    "prerequisites": [
+      "p11"
+    ],
+    "learning_outcomes": [
+      "Able to: Create source IK Rig",
+      "Able to: Create target IK Rig",
+      "Able to: Retarget animation",
+      "Able to: Fix hands/feet"
+    ],
+    "tasks": [
+      "Create source IK Rig",
+      "Create target IK Rig",
+      "Retarget animation",
+      "Fix hands/feet"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p12-r1",
+      "p12-r2",
+      "p12-r3"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; UE 5.8; חינמי עם חשבון"
+  },
+  {
+    "id": "p13",
+    "number": 13,
+    "title": "Control Rig",
+    "priority_status": "מומלץ",
+    "estimated_hours": "5–10 ש׳",
+    "summary": "Rigging/posing/animation ישירות בתוך Unreal, במיוחד שימושי ל-cinematics ול-adjustments קטנים.",
+    "goal": "לדעת לתקן pose או לבנות control קטן בלי לחזור ל-Blender בכל שינוי.",
+    "prerequisites": [
+      "p12"
+    ],
+    "learning_outcomes": [
+      "Able to: Open Control Rig sample",
+      "Able to: Create basic Control Rig",
+      "Able to: Pose character",
+      "Able to: Test Sequencer animation"
+    ],
+    "tasks": [
+      "Open Control Rig sample",
+      "Create basic Control Rig",
+      "Pose character",
+      "Test Sequencer animation"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p13-r1",
+      "p13-r2",
+      "p13-r3"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; תיעוד רשמי; UE 5.8; תיעוד רשמי; חינמי; Epic"
+  },
+  {
+    "id": "p14",
+    "number": 14,
+    "title": "Free Animation Sources",
+    "priority_status": "מומלץ",
+    "estimated_hours": "3–6 ש׳",
+    "summary": "Mixamo + template animations + retargeting. להשתמש כ-placeholder לפני שמייצרים/רוכשים motion איכותי משלך.",
+    "goal": "להכניס במהירות locomotion בסיסי ולבדוק gameplay לפני השקעת זמן באנימציות final.",
+    "prerequisites": [
+      "p13"
+    ],
+    "learning_outcomes": [
+      "Able to: Import idle/walk/run",
+      "Able to: Retarget",
+      "Able to: Blend and clean",
+      "Able to: Mark where custom animation is needed"
+    ],
+    "tasks": [
+      "Import idle/walk/run",
+      "Retarget",
+      "Blend and clean",
+      "Mark where custom animation is needed"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p14-r1",
+      "p14-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "חינמי עם חשבון; חינמי דרך Epic/Fab"
+  },
+  {
+    "id": "p15",
+    "number": 15,
+    "title": "Doom Movement Quality Pass",
+    "priority_status": "חובה",
+    "estimated_hours": "8–20 ש׳",
+    "summary": "walk, jog, run, sprint, idle, turn, stop, acceleration, deceleration, camera behavior ו-feel.",
+    "goal": "Doom צריך להרגיש כבד ומדויק, לא כמו mannequin עם speed multiplier.",
+    "prerequisites": [
+      "p14"
+    ],
+    "learning_outcomes": [
+      "Able to: Distinct locomotion clips",
+      "Able to: Start/stop polish",
+      "Able to: Turn behavior",
+      "Able to: Idle micro-motion"
+    ],
+    "tasks": [
+      "Distinct locomotion clips",
+      "Start/stop polish",
+      "Turn behavior",
+      "Idle micro-motion"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p15-r1",
+      "p15-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "Reference; Reference"
+  },
+  {
+    "id": "p16",
+    "number": 16,
+    "title": "Gameplay Systems + Combat Architecture",
+    "priority_status": "חובה",
+    "estimated_hours": "10–25 ש׳",
+    "summary": "State machine ל-combat, attacks, hit detection, damage, cooldowns, target selection ואפקטים — בארכיטקטורה מודולרית.",
+    "goal": "לבנות מערכת קרב שאפשר להרחיב בלי Blueprint אחד ענק.",
+    "prerequisites": [
+      "p15"
+    ],
+    "learning_outcomes": [
+      "Able to: Create gameplay states",
+      "Able to: Build one complete attack loop",
+      "Able to: Separate damage from visuals",
+      "Able to: Create reusable combat components"
+    ],
+    "tasks": [
+      "Create gameplay states",
+      "Build one complete attack loop",
+      "Separate damage from visuals",
+      "Create reusable combat components"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p16-r1",
+      "p16-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; UE 5.8"
+  },
+  {
+    "id": "p17",
+    "number": 17,
+    "title": "Niagara + Doom Powers / VFX",
+    "priority_status": "מומלץ",
+    "estimated_hours": "8–15 ש׳",
+    "summary": "Particles, emitters, systems, materials, gameplay-driven VFX ו-performance awareness.",
+    "goal": "אפקט ראשון שמופעל מה-gameplay וניתן למחזור במערכות שונות.",
+    "prerequisites": [
+      "p16"
+    ],
+    "learning_outcomes": [
+      "Able to: Create/modify Niagara System",
+      "Able to: Trigger from Blueprint",
+      "Able to: Add impact/energy feedback",
+      "Able to: Profile effect cost"
+    ],
+    "tasks": [
+      "Create/modify Niagara System",
+      "Trigger from Blueprint",
+      "Add impact/energy feedback",
+      "Profile effect cost"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p17-r1"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; תיעוד רשמי"
+  },
+  {
+    "id": "p18",
+    "number": 18,
+    "title": "Audio + Voice Pipeline",
+    "priority_status": "מומלץ",
+    "estimated_hours": "6–12 ש׳",
+    "summary": "SFX layering, 3D attenuation, voice import, mix priorities ו-MetaSounds לפי הצורך.",
+    "goal": "כל פעולה במשחק מקבלת feedback קולי אמין; voice pipeline מסודר מהקלטה עד המשחק.",
+    "prerequisites": [
+      "p17"
+    ],
+    "learning_outcomes": [
+      "Able to: Import and organize sounds",
+      "Able to: 3D attenuation",
+      "Able to: One gameplay-driven audio event",
+      "Able to: Voice file naming + processing"
+    ],
+    "tasks": [
+      "Import and organize sounds",
+      "3D attenuation",
+      "One gameplay-driven audio event",
+      "Voice file naming + processing"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p18-r1",
+      "p18-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; UE 5.8"
+  },
+  {
+    "id": "p19",
+    "number": 19,
+    "title": "Facial Rig + Lip Sync",
+    "priority_status": "מאוחר יותר",
+    "estimated_hours": "10–25 ש׳",
+    "summary": "Face bones/morphs, jaw/lips/eyes/brows, speech timing ו-audio-driven mouth cues.",
+    "goal": "ב-Victor הלא-מסכה, תזמון הפה צריך לעקוב אחרי הדיבור ולא רק להתחיל ולהיגמר יחד.",
+    "prerequisites": [
+      "p18"
+    ],
+    "learning_outcomes": [
+      "Able to: Define facial controls",
+      "Able to: Create test dialogue",
+      "Able to: Generate phoneme timing",
+      "Able to: Drive morph targets/controls"
+    ],
+    "tasks": [
+      "Define facial controls",
+      "Create test dialogue",
+      "Generate phoneme timing",
+      "Drive morph targets/controls"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p19-r1",
+      "p19-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "Open source; MIT; חינמי; Epic"
+  },
+  {
+    "id": "p20",
+    "number": 20,
+    "title": "Sequencer + Cinematics + Dialogue",
+    "priority_status": "מומלץ",
+    "estimated_hours": "8–16 ש׳",
+    "summary": "Level Sequences, cameras, character animation, dialogue staging, transitions ו-render.",
+    "goal": "סצנת דיאלוג אחת עובדת מתחילתה ועד סופה בתוך אותה מערכת כמו המשחק.",
+    "prerequisites": [
+      "p19"
+    ],
+    "learning_outcomes": [
+      "Able to: Create Level Sequence",
+      "Able to: Animate camera",
+      "Able to: Bind character",
+      "Able to: Blend in gameplay/out"
+    ],
+    "tasks": [
+      "Create Level Sequence",
+      "Animate camera",
+      "Bind character",
+      "Blend in gameplay/out"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p20-r1",
+      "p20-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; UE 5.8"
+  },
+  {
+    "id": "p21",
+    "number": 21,
+    "title": "World Building + Environment Pipeline",
+    "priority_status": "מומלץ",
+    "estimated_hours": "12–30 ש׳",
+    "summary": "Grayboxing, modular environments, lighting, materials, set dressing, interactables ו-NPC spaces.",
+    "goal": "לבנות אזור אחד קטן אך איכותי שמרגיש כמו מקום אמיתי ולא כמו test map.",
+    "prerequisites": [
+      "p20"
+    ],
+    "learning_outcomes": [
+      "Able to: Graybox one district/room",
+      "Able to: Lighting pass",
+      "Able to: Set dressing",
+      "Able to: Add 3 interactable details"
+    ],
+    "tasks": [
+      "Graybox one district/room",
+      "Lighting pass",
+      "Set dressing",
+      "Add 3 interactable details"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p21-r1",
+      "p21-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; UE 5.8"
+  },
+  {
+    "id": "p22",
+    "number": 22,
+    "title": "AI + Enemy Behaviors",
+    "priority_status": "מאוחר יותר",
+    "estimated_hours": "10–25 ש׳",
+    "summary": "AI Controller, Blackboard, Behavior Tree, perception, patrol/chase/decision loops ו-debugging.",
+    "goal": "אויב אחד עם behavior אמין ומובן לפני שמייצרים כמה סוגים.",
+    "prerequisites": [
+      "p21"
+    ],
+    "learning_outcomes": [
+      "Able to: AI Controller",
+      "Able to: Blackboard",
+      "Able to: Behavior Tree",
+      "Able to: Sight/chase/debug"
+    ],
+    "tasks": [
+      "AI Controller",
+      "Blackboard",
+      "Behavior Tree",
+      "Sight/chase/debug"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p22-r1",
+      "p22-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; UE 5.8"
+  },
+  {
+    "id": "p23",
+    "number": 23,
+    "title": "UI + Settings + Accessibility",
+    "priority_status": "מומלץ",
+    "estimated_hours": "8–16 ש׳",
+    "summary": "HUD, pause menu, settings, controller bindings, sensitivity, subtitles, graphics options ו-feedback.",
+    "goal": "שחקן יכול לשנות הגדרות בלי לשבור gameplay; כל input נגיש דרך action mapping.",
+    "prerequisites": [
+      "p22"
+    ],
+    "learning_outcomes": [
+      "Able to: HUD",
+      "Able to: Pause menu",
+      "Able to: Settings screen",
+      "Able to: Input remap prototype"
+    ],
+    "tasks": [
+      "HUD",
+      "Pause menu",
+      "Settings screen",
+      "Input remap prototype"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p23-r1",
+      "p23-r2"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; UE 5.8"
+  },
+  {
+    "id": "p24",
+    "number": 24,
+    "title": "Save System + Data Architecture",
+    "priority_status": "מומלץ",
+    "estimated_hours": "5–12 ש׳",
+    "summary": "SaveGame, checkpoints, persistent progression, data assets ו-versioning.",
+    "goal": "לשמור progress אמין בלי לקשור כל מערכת ל-save code שלה.",
+    "prerequisites": [
+      "p23"
+    ],
+    "learning_outcomes": [
+      "Able to: Create SaveGame class",
+      "Able to: Save checkpoint",
+      "Able to: Load checkpoint",
+      "Able to: Test corrupted/old data path"
+    ],
+    "tasks": [
+      "Create SaveGame class",
+      "Save checkpoint",
+      "Load checkpoint",
+      "Test corrupted/old data path"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p24-r1"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8"
+  },
+  {
+    "id": "p25",
+    "number": 25,
+    "title": "Optimization + Debugging + Packaging",
+    "priority_status": "חובה בסוף",
+    "estimated_hours": "12–30 ש׳",
+    "summary": "Profiling, memory, draw calls, animation/VFX costs, packaged builds, crash/debug habits ו-PC/Xbox-ready input architecture.",
+    "goal": "לא לסיים עם prototype שעובד רק בתוך Editor. לבנות build שאפשר למדוד, לבדוק ולשחזר.",
+    "prerequisites": [
+      "p24"
+    ],
+    "learning_outcomes": [
+      "Able to: Package a build",
+      "Able to: Profile gameplay scene",
+      "Able to: Measure VFX/animation cost",
+      "Able to: Run clean install test"
+    ],
+    "tasks": [
+      "Package a build",
+      "Profile gameplay scene",
+      "Measure VFX/animation cost",
+      "Run clean install test"
+    ],
+    "exit_criteria": "Do not advance until this phase is working well enough to serve as the foundation for the next phase.",
+    "resource_ids": [
+      "p25-r1",
+      "p25-r2",
+      "p25-r3"
+    ],
+    "notes": "",
+    "research_date": "2026-09-22",
+    "version_notes": "UE 5.8; Reference; עדכני ל-5.8"
+  }
+]

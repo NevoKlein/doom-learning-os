@@ -1,32 +1,17 @@
 # Architecture
 
 ## Current
-The project begins as a dependency-light static web app:
-- `index.html` contains the current UI, CSS, JavaScript behavior and initial curriculum data.
-- Browser `localStorage` stores progress and notes.
-- External learning resources open in new tabs.
-- No backend is required for the current interface.
+Dependency-light static web app. index.html contains UI, CSS, JavaScript and baseline curriculum data. Browser localStorage stores progress and notes.
 
-Current localStorage keys:
-- `doomLearningState`
-- `doomGlobalNotes`
+## Target
+Git repository stores canonical learning/project content. Web application provides the learning interface. Optional managed backend stores account-specific progress and collaboration state.
 
-## Planned
-Migrate gradually toward:
-- `content/curriculum.json`
-- `content/resources.json`
-- separate application JS/CSS when the split clearly improves maintainability
-- documentation under `docs/`
-- automated tests/checks under `tests/`
+## Data boundary
+GitHub: curriculum, resources, project strategy, research, decisions and changelog.
+Database: users, personal progress, personal notes, study sessions and collaboration state.
 
-Do not perform a large rewrite purely for style. Preserve existing behavior and saved progress.
+## Safety
+Never silently discard localStorage. Any schema/storage change needs migration or an explicit safe compatibility path.
 
-## Data safety
-Any future storage-schema change must include a migration or a safe compatibility path. Never silently discard progress or notes.
-
-## Content source of truth
-Once the migration is complete, curriculum/resource JSON becomes the source of truth for learning content. The current HTML remains the baseline until that migration is tested.
-
-## Design
-The UI is RTL Hebrew, dark, Doom-inspired and intentionally dependency-light. Codex may improve information architecture and visual design when it improves learning or reduces friction.
-
+## Technology flexibility
+Vercel/Supabase are candidate providers, not fixed requirements. Choose the simplest current architecture that satisfies the product requirements.

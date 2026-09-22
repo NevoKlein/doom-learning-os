@@ -37,7 +37,7 @@ if (Array.isArray(resources)) {
     if (r.id) check(!ids.has(r.id), "duplicate resource id: " + r.id);
     if (r.id) ids.add(r.id);
     check(typeof r.phase_id === "string" && r.phase_id.length > 0, "resource " + (r.id || i) + " missing phase_id");
-    check(typeof r.url === "string" && /^https?:\\/\\//.test(r.url), "resource " + (r.id || i) + " has invalid URL");
+    check(typeof r.url === "string" && (r.url.startsWith("https://") || r.url.startsWith("http://")), "resource " + (r.id || i) + " has invalid URL");
   });
   if (Array.isArray(curriculum)) {
     const phaseIds = new Set(curriculum.map(p => p && p.id));

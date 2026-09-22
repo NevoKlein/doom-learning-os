@@ -16,6 +16,8 @@ Before making substantial changes, read the entire repository and then read:
 - docs/RESEARCH_LOG.md
 - docs/ARCHITECTURE.md
 - docs/CHANGELOG.md
+- docs/CURRENT_STATE.md
+- docs/AI_TIMING_STRATEGY.md
 - content/curriculum.json
 - content/resources.json
 
@@ -154,6 +156,22 @@ A strong completion should leave:
 - updated documentation;
 - a clear current project state;
 - enough context for the next Codex session to continue without guessing.
+
+## AI timing gate
+
+The project owner is explicitly considering whether to wait roughly two months for stronger and/or cheaper AI coding agents.
+
+Treat this as an open strategic option, not a decision.
+
+Before large irreversible work, consult docs/AI_TIMING_STRATEGY.md and consider:
+- durable value;
+- automation potential;
+- validation value;
+- rework risk;
+- current tool cost/capability;
+- reversibility.
+
+Never assume future model releases, prices or capabilities.
 
 ## Default behavior
 

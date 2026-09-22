@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026-09-23
+- Added docs/AI_TIMING_STRATEGY.md with a structured build-now vs wait vs middle-ground decision framework.
+- Documented the AI timing question as an open decision rather than a prediction.
+- Updated README and current-state documentation to preserve this strategy for future Codex sessions.
+- Updated AGENTS.md so major implementation decisions explicitly consider durable value, automation potential, reversibility, current tool capability and cost.
+- Recorded the strategy in the decision log.
+
 ## 2026-09-22
 - Bootstrapped the GitHub repository and Learning OS.
 - Added structured curriculum and resource JSON baselines.

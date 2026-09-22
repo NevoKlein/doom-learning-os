@@ -39,6 +39,9 @@ tests/
 5. Update the research log/changelog for significant changes.
 6. Keep the repository and deployed site synchronized.
 
+## Current project-direction change
+The project now follows a character-first Doctor Doom foundation strategy. Read `docs/CODEX_HANDOFF_PROJECT_CHANGE.md` for the complete canonical handoff and `docs/PROJECT_CONTEXT.md` for the current strategic context.
+
 ## Project scope
 The curriculum moves from Unreal fundamentals and Blueprint architecture through character creation, Blender, skeletal assets, rigging, animation, retargeting, gameplay/combat, Niagara, audio, facial animation/lip sync, cinematics, world building, AI, UI/settings, save systems, optimization and packaging.
 

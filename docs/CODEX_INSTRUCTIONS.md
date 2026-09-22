@@ -1,35 +1,31 @@
 # CODEX MASTER INSTRUCTIONS — DOOM LEARNING OS
 
 MISSION
-Maintain and continuously improve this website for the Doctor Doom game-development learning project. Treat the repository as a living product, not a one-off HTML page.
+Maintain and continuously improve this website and its learning system for the Doctor Doom game-development project. Treat the repository as a living product, not a one-off HTML page.
+
+CRITICAL CURRENT DIRECTION
+The project has undergone a major direction change toward a character-first Doctor Doom foundation. Read `docs/CODEX_HANDOFF_PROJECT_CHANGE.md` immediately after reading this file. That handoff is the canonical strategic context.
 
 FIRST ACTIONS — ALWAYS
 1. Read the entire repository before changing anything.
-2. Read README, project-rule files, research notes, architecture docs, curriculum data and changelog files.
-3. Identify the source of truth for curriculum content, UI/design, progress, research and configuration.
+2. Read README, project-rule files, research notes, architecture docs, curriculum data, project context, design proposals, decision log and changelog.
+3. Identify the current source of truth for curriculum content, UI/design, progress, research, project strategy and configuration.
 4. Inspect existing behavior before changing it.
 5. For research-dependent changes, verify current versions, URLs, licensing and workflows first.
 6. Make a concise plan and define how the change will be tested.
 7. Make the smallest safe change unless a larger refactor is clearly justified.
 8. Test the result and report what changed and what was verified.
 
-GAME CONTEXT
-This site teaches a beginner toward a high-quality third-person/first-person comic-inspired Doctor Doom action game in Unreal Engine. The curriculum grows through Unreal fundamentals, Blueprints, Enhanced Input, cameras, Blender, modeling, skeletal meshes, rigging, FBX, animation, retargeting, Control Rig, combat, Niagara, audio, facial animation/lip sync, Sequencer, world building, AI, UI, save systems, optimization and packaging.
+STRATEGIC PRINCIPLE
+Build the foundation first:
+learn -> build -> test -> improve -> document -> continue.
 
-CORE PROJECT PRINCIPLES
-- One small system at a time.
-- Learn -> build -> test -> improve -> continue.
-- Do not force advanced study before useful building.
-- Doom is the current foundation, but earlier design proposals are replaceable.
-- Third-person is default; first-person should be a genuine character POV with correct hands/body/head-look behavior.
-- Input is action-based and should remain Xbox-ready.
-- Walk, jog/run and sprint should have meaningful movement/animation differences.
-- Armor should be modular where technically useful for construction, wearing/removal, damage and replacement.
-- Systems should be modular and reusable.
-- Story/canon claims are research-driven, not assumed.
+The first foundation is a high-quality playable Doctor Doom character and its core systems, not a giant world or roster.
+
+PROJECT CONTEXT
+Use `docs/PROJECT_CONTEXT.md` and `docs/GAME_DESIGN_PROPOSALS.md` for the current game direction. These describe proposals, not immutable laws.
 
 RESEARCH POLICY
-For every research-heavy update:
 - Check official/current documentation first.
 - Check current release/version information.
 - Verify every new link.
@@ -39,7 +35,7 @@ For every research-heavy update:
 - Never invent tutorial titles, URLs, licenses, versions or capabilities.
 - Replace obsolete workflows instead of silently keeping them.
 - When sources conflict, document the uncertainty.
-- Record important decisions in RESEARCH_LOG/CHANGELOG.
+- Record important decisions in RESEARCH_LOG/CHANGELOG/DECISION_LOG.
 
 RESOURCE STANDARD
 For each useful resource, preserve or add when practical:
@@ -57,6 +53,10 @@ index.html
 content/curriculum.json
 content/resources.json
 docs/CODEX_INSTRUCTIONS.md
+docs/CODEX_HANDOFF_PROJECT_CHANGE.md
+docs/PROJECT_CONTEXT.md
+docs/GAME_DESIGN_PROPOSALS.md
+docs/DECISION_LOG.md
 docs/RESEARCH_LOG.md
 docs/ARCHITECTURE.md
 docs/CHANGELOG.md
@@ -78,9 +78,10 @@ UX REQUIREMENTS
 - Keyboard accessibility and visible focus.
 - Strong contrast and readable typography.
 - Fast load and minimal dependencies.
+- Distinguish learning tasks from actual game-building tasks.
 
 DESIGN FREEDOM
-Codex is explicitly allowed to improve the visual design and information architecture. It may introduce better dashboards, timelines, cards, progress visualizations, navigation, themes, icons and micro-interactions.
+Codex is explicitly allowed to improve visual design and information architecture. It may introduce better dashboards, timelines, cards, progress visualizations, navigation, themes, icons and micro-interactions.
 Do not redesign for novelty alone. Preserve important information. Keep the Doom-inspired identity unless usability evidence supports a change. Validate mobile and desktop after major changes.
 
 GOOD FEATURES TO ADD WHEN JUSTIFIED
@@ -107,6 +108,8 @@ Before declaring a change complete:
 - Content claims are verified.
 - Existing progress remains usable.
 - The next human/Codex session can understand what changed.
+- Structured JSON parses.
+- New strategic documents are internally consistent.
 
 VERSION CONTROL
 Use small logical commits or PRs when available. Use descriptive messages. Do not mix unrelated work without documenting it. For risky work, prefer a branch/PR.
@@ -116,10 +119,10 @@ User ideas are proposals, not immutable requirements. When research or engineeri
 1. Identify the limitation.
 2. Propose the better option briefly.
 3. Implement it when safe.
-4. Record significant replacements in the changelog/research log.
+4. Record significant replacements in the changelog/research log/decision log.
 
-FUTURE RESEARCH SOURCES
-Prioritize Epic Games official documentation/samples, Blender official documentation/training, Fab with license verification, Mixamo/Adobe terms, reputable open-source projects, and current community evidence from forums/Reddit/YouTube. Clearly label community evidence.
+FREE-TOOL POLICY
+Prefer free tools/services wherever practical. Do not silently introduce paid dependencies. Verify licensing and terms before recommending production assets.
 
 FIRST REPOSITORY AUDIT
 Before a major rewrite, inspect and report:
@@ -129,8 +132,9 @@ Before a major rewrite, inspect and report:
 4. bugs
 5. outdated/missing resources
 6. design/UX issues
-7. highest-value improvements
-8. proposed next steps
+7. how the current curriculum aligns or conflicts with the character-first direction
+8. highest-value improvements
+9. proposed next steps
 Then implement the highest-value safe improvements in small testable increments.
 
 LONG-TERM GOAL

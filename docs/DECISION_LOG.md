@@ -22,3 +22,17 @@ Prefer free tools/services. Do not introduce paid dependencies as silent require
 
 ## 2026-09-22 — Repository
 GitHub repository is the source of truth for Codex. The deployed website is the learning interface.
+
+
+## 2026-09-22 — Baseline quality policy
+The initial website/repository should be treated as a baseline built with a relatively weak model, not as a finished or authoritative implementation.
+
+Codex is authorized and expected to:
+- audit everything;
+- improve or rewrite weak implementation;
+- research stronger current approaches;
+- preserve useful knowledge and user data;
+- document material changes.
+
+## 2026-09-22 — History vs current state
+The repository must preserve project history, but history does not freeze decisions. When stronger research shows a better plan, the current researched state becomes the implementation target and the old state remains documented for traceability.

@@ -53,3 +53,16 @@ Unmasked Victor scenes may require facial animation and precise lip-sync timing.
 
 ## Decision status
 This document describes the current direction. Detailed tradeoffs and changes belong in `docs/DECISION_LOG.md` and `docs/RESEARCH_LOG.md`.
+
+
+## Implementation confidence
+
+This repository is an initial baseline, not a technical authority. Existing code and architecture were produced with a relatively weak model and may be incomplete or suboptimal.
+
+Codex should independently audit and improve them.
+
+## Current-state rule
+
+The latest researched project state is the implementation target.
+
+Historical decisions remain documented for traceability, but Codex may replace them when better evidence, architecture, tooling or workflow is found.

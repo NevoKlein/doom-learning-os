@@ -773,3 +773,29 @@ The objective is to create a learning/development system that can take a beginne
 The project should become more capable over time without becoming more chaotic.
 
 **Build the foundation first. Prove it. Polish it. Then expand.**
+
+
+## 28. IMPLEMENTATION QUALITY AND STRONGER-MODEL HANDOFF
+
+The existing repository/site is an initial baseline. It was assembled with a relatively weak model and should therefore be assumed to contain opportunities for substantial improvement.
+
+Codex should not equate “already implemented” with “correct,” “optimal,” or “production quality.”
+
+Audit the implementation aggressively but safely:
+- inspect all code and data;
+- identify architectural weaknesses;
+- identify missing features;
+- identify UX problems;
+- identify questionable technical assumptions;
+- research current alternatives;
+- replace weak solutions when justified;
+- test every substantial replacement.
+
+Do not preserve an obsolete design merely for consistency with an earlier model.
+
+However, preserve useful project knowledge and user data. The correct policy is:
+**preserve the history, improve the implementation.**
+
+If research causes a change in direction, document both the old and new approach. The current researched state should control implementation; historical decisions should remain available for context.
+
+Every significant project update should be reflected in version-controlled documentation so a future Codex session can reconstruct how the project reached its current state.

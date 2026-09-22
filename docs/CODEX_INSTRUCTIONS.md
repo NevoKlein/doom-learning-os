@@ -142,3 +142,86 @@ Turn this from a static curriculum into a maintainable Learning OS that can evol
 
 IMPORTANT
 The GitHub repository is the source of truth for Codex. The deployed site is the learning interface. Keep them synchronized.
+
+
+## CRITICAL BASELINE NOTE — IMPLEMENTATION QUALITY
+
+The existing website and repository were initially assembled with a relatively weak OpenAI model compared with the model/tooling that may work on this repository later.
+
+Therefore, **do not treat the current implementation as high-quality simply because it already exists.**
+
+Treat all existing code, architecture, UI, curriculum structure, technical assumptions and planning as a **baseline to audit**, not as proof that the solution is correct.
+
+Codex is explicitly expected to:
+- inspect everything;
+- find bugs, weak architecture, duplicated logic, missing functionality and poor UX;
+- research better current approaches;
+- redesign or rewrite parts when justified;
+- replace weak decisions with better researched decisions;
+- improve both the visible website and the underlying repository structure;
+- test the result rather than assuming the existing code works.
+
+Do not preserve a weak implementation merely because changing it is inconvenient.
+
+At the same time, do not make arbitrary rewrites. Preserve useful content and user data, and make changes because they improve correctness, maintainability, learning value, UX, security or project velocity.
+
+### NEW MODEL / NEW CAPABILITY ASSUMPTION
+
+When a stronger model, better tooling or deeper research makes an older decision obsolete:
+1. identify the old assumption;
+2. explain the limitation;
+3. research the better option;
+4. replace it when justified;
+5. record the change in the appropriate decision/research/changelog file.
+
+The current repository is **not** the authority on what is technically best. The documented project goals are the authority on what the project is trying to achieve; the implementation should evolve toward the best researched solution.
+
+### PROJECT UPDATE POLICY
+
+All meaningful project updates should be preserved in the repository.
+
+Codex should maintain the project record when:
+- a system is added or removed;
+- the game direction changes;
+- a technical decision changes;
+- a tool/workflow is replaced;
+- a curriculum dependency changes;
+- a research finding changes the plan;
+- a limitation or blocker is discovered;
+- a milestone is completed.
+
+But preserving history does **not** mean freezing old decisions.
+
+The repository should maintain both:
+- **history:** what we previously believed/planned and why;
+- **current state:** what Codex now believes is the best researched direction.
+
+When they differ, current state wins for implementation, while the historical decision remains documented.
+
+### CHANGE-OF-MIND RECORD
+
+For a material planning change, record:
+- previous approach;
+- new approach;
+- evidence/research;
+- reason for the change;
+- affected files/systems;
+- migration or compatibility requirements;
+- date;
+- whether the change is reversible.
+
+Avoid vague entries such as “updated plan.” Record what actually changed.
+
+### CONTINUOUS AUDIT
+
+On substantial sessions, Codex should actively ask:
+- Is this still the best architecture?
+- Are there newer Unreal/Blender workflows?
+- Are the links/resources still current?
+- Is there a simpler implementation?
+- Is there a better free tool?
+- Is the UX making the next action obvious?
+- Are we building the right thing, in the right order?
+- Are we preserving project knowledge while still allowing improvement?
+
+The objective is a progressively better system, not permanent loyalty to the first implementation.

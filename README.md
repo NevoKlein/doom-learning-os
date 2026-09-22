@@ -40,3 +40,9 @@ tests/
 
 ## One-link Codex handoff
 https://github.com/nevoklein100-png/doom-learning-os
+
+
+## Baseline quality note
+The current implementation is an initial baseline and should be audited, improved and potentially reworked by Codex. Existing code and planning are not presumed optimal.
+
+The repository preserves project history, while the latest researched project state is the implementation target.

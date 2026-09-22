@@ -6,7 +6,7 @@ A living learning system for the Doctor Doom game-development project.
 This repository is the source of truth for Codex. The deployed site is the learning interface.
 
 ## Current strategic direction
-The project follows a character-first Doctor Doom foundation strategy. Read `docs/CODEX_HANDOFF_PROJECT_CHANGE.md`, `docs/PROJECT_CONTEXT.md` and `docs/CURRENT_STATE.md` before making major changes.
+The project follows a character-first Doctor Doom foundation strategy. Read docs/CODEX_HANDOFF_PROJECT_CHANGE.md, docs/PROJECT_CONTEXT.md, docs/CURRENT_STATE.md and docs/AI_TIMING_STRATEGY.md before making major changes.
 
 ## Current interface
 The repository contains the initial static Learning OS with 25 curriculum phases, resource data, roadmap, four-week starter plan, search/filtering, progress tracking, notes, exports and Codex guidance.
@@ -23,6 +23,9 @@ These checks validate JSON syntax, IDs, curriculum/resource references, URL shap
 
 ## Target product
 Evolve this into a professional Learning OS that combines learning content, project milestones, next-action guidance, synced progress, research records and optional collaboration.
+
+## Strategic timing
+The repository explicitly considers whether to build now, wait for stronger/cheaper AI, or use a middle-ground strategy. See docs/AI_TIMING_STRATEGY.md and GitHub Issue #1. Do not assume future model releases or price changes; reassess using evidence.
 
 ## Target hosting/database
 Use a Git-connected host and, when cloud sync is justified, a managed database/auth layer. Vercel + Supabase are candidate choices; Codex should verify current capabilities before adopting them.
@@ -45,14 +48,18 @@ docs/
   RESEARCH_LOG.md
   ARCHITECTURE.md
   CHANGELOG.md
+  CURRENT_STATE.md
+  AI_TIMING_STRATEGY.md
 assets/
 tests/
 
 ## One-link Codex handoff
 https://github.com/nevoklein100-png/doom-learning-os
 
-
 ## Baseline quality note
 The current implementation is an initial baseline and should be audited, improved and potentially reworked by Codex. Existing code and planning are not presumed optimal.
 
 The repository preserves project history, while the latest researched project state is the implementation target.
+
+## Current working principle
+Until the AI-timing decision checkpoint is reached, favor small, durable, testable improvements over large speculative rewrites. This keeps the project useful whether development continues now or a stronger implementation agent is used later.

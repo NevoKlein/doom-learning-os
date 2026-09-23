@@ -4,7 +4,7 @@ Last audited: 2026-09-23
 
 ## Current reality
 
-The Learning OS is now a responsive, public static site with a character-first milestone dashboard, a concrete next action, all 25 curriculum phases, 54 resource records, search/filtering, prerequisite visibility, task progress, notes, and versioned backup/import. GitHub Pages publishes the site from the NevoKlein fork's `main`. The original repository remains upstream and needs its owner to merge the proposed changes or grant write access before its `main` matches the live site.
+The Learning OS is now a responsive, public static site with a character-first milestone dashboard, a concrete next action, all 25 curriculum phases, 54 resource records, search/filtering, prerequisite visibility, task progress, notes, and versioned backup/import. GitHub Pages publishes the site from the original repository's `main` at https://nevoklein100-png.github.io/doom-learning-os/.
 
 The three JSON content files are the only curriculum, resource, and milestone datasets used by the UI. The older inlined HTML curriculum has been removed. Task keys remain compatible with the original site, and `assets/state.js` migrates legacy browser progress and notes without deleting old keys.
 

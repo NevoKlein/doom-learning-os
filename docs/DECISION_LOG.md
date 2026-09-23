@@ -1,7 +1,7 @@
 # Decision Log
 
-## 2026-09-23 — Publish from an account-owned fork while upstream access is unavailable
-The authenticated GitHub account is `NevoKlein`; GitHub reports `push: false` for `nevoklein100-png/doom-learning-os`, and a push returned HTTP 403. Repository instructions do not grant GitHub permissions. A public `NevoKlein/doom-learning-os` fork will host the live Pages site and hold a pull request against the original repository. This is reversible: after upstream access or merge, Pages can be enabled on the original repository and the public link updated.
+## 2026-09-23 — Publish the canonical site from the original repository
+The original repository owner invited `NevoKlein` with Write access, the invitation was accepted, and GitHub now reports push permission. The original `nevoklein100-png/doom-learning-os` repository is canonical and hosts GitHub Pages from `main`. The fork was used temporarily while access was unavailable.
 
 ## 2026-09-23 — Publish a usable Learning OS now
 ### Previous approach

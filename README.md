@@ -4,7 +4,7 @@ A public learning and build guide for the Doctor Doom game project. The site tur
 
 ## Open the site
 
-https://nevoklein100-png.github.io/doom-learning-os/
+https://nevoklein.github.io/doom-learning-os/
 
 The curriculum is public. Personal progress and notes stay in the current browser. Use **Download backup JSON** in the workspace to move or safeguard them; **Import backup** merges completed tasks and preserves both versions of differing notes. The site has no account or cross-device sync yet.
 
@@ -36,7 +36,7 @@ A local HTTP server is needed because browsers restrict JSON fetches from `file:
 
 ## Publishing
 
-GitHub Pages serves the repository root from `main`. `.nojekyll` tells Pages to publish the static files directly. Changes to `main` become public after Pages completes its build. Keep `main` ready to publish; verify browser behavior before pushing. The repository is public, so never commit secrets or personal notes.
+GitHub Pages serves the repository root from `main` on the [NevoKlein fork](https://github.com/NevoKlein/doom-learning-os). `.nojekyll` tells Pages to publish the static files directly. The original [project repository](https://github.com/nevoklein100-png/doom-learning-os) remains the upstream project; the current authenticated GitHub account cannot push to it, so the fork hosts this release and proposes changes upstream by pull request. Changes to the fork's `main` become public after Pages completes its build. The repository is public, so never commit secrets or personal notes.
 
 ## Next boundaries
 

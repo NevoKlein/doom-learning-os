@@ -6,6 +6,7 @@
 - Added versioned local state, migration of the original browser keys, malformed-data recovery, and merge-safe backup export/import.
 - Replaced the strict 25-phase prerequisite chain with dependencies that let core Doom prototyping proceed without optional topics blocking it.
 - Added GitHub Pages publishing support and browser/structured-data validation.
+- Published from the `NevoKlein` fork because the authenticated account has no push access to the original repository; prepared an upstream pull request.
 - Corrected the Content Examples resource URL and recorded the current link-availability review.
 
 ## 2026-09-23
